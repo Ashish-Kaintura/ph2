@@ -16,7 +16,7 @@ export default function page() {
       </div>
       <div className="p-6">
         <div className="">
-          <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  ">
+          <div className=" grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  space-y-3 ">
             <div className="bg-white shadow-md rounded-lg overflow-hidden sm:w-[450px]">
               <div className="p-6 overflow-hidden">
                 <Image
