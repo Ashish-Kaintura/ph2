@@ -117,7 +117,7 @@ export default function page() {
                   or an unwinding getaway with your loved ones, Punarnava Resort
                   & Spa is the place to be.
                 </p>
-                <Link href="/the-best-middle-of-mountain-resor">
+                <Link href="/the-best-middle-of-mountain-resort">
                   <h2 className="mt-4 text-blue-600 hover:underline">
                     Read More
                   </h2>
