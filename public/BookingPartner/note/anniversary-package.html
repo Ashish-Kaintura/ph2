@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>An Award-Winning Destination Spa for Couples & Families</title>
+<meta name="description" content="In the Foothills of the Famous World Heritage Site Kumbhalgarh fort & the Great Wall Of India" />
+<link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/fontawesome-all.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="../owlcarousel/owl.theme.default.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" async></script>
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="./js/captcha.js" async defer></script>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-4 "> <a class="navbar-brand " href="../index.html"> <img src="img/logo.png" alt="Logo"></a> </div>
+      <div class="col-lg-8 col-8 "> <a href="tel:9818005957" class="btn buttonf  float-end"  id = "Header-Book-Now">9818005957
+        </a></div>
+    </div>
+  </div>
+</header>
+
+
+<!-- The Modal -->
+
+	  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	    <div class="modal-header">
+         <h1 class="partner-heading ">Share with friends</h1>
+           </div>
+      <div class="modal-body">
+   <div class="row">
+       <h4>Sharing link</h4>
+	   <p> <a class="btn-copy btn">Copy link</a></p>
+	   <h4>Or share on</h5>
+	   <ul class="socialIcons">
+	   <li class="whatsApp">
+	   <a href="#" ><i class="fa fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a></li>
+	   <li class="facebook"> <a href="#" ><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a></li>
+	    <li class="email"><a href="#" ><i class="fa fa-envelope" aria-hidden="true"></i><span>Gmail</span></a></li>
+	   </ul>
+	   
+
+</div>
+
+ </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- book now Popup -->
+<div class="modal fade book_pop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <h2 class="text-center">Get A Call Back </h2>
+            <div class="contact_form">
+              <div class="cont_txt heading">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form class="row p-3" id="contact-form" name="contact-form" action="./booking-form.php" method="POST" onsubmit="return submitUserForm();">
+                  <div class="form-group col-lg-6   mb-1">
+                    <input type="text" id="name" name="Name" class="form-control" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-lg-6 ps-lg-0 mb-1">
+                    <input type="text" id="name" name="Lastname" class="form-control" placeholder="Last Name" required>
+                  </div>
+                  <div class="form-group   col-lg-12  mb-1">
+                    <input type="text" class="form-control " id="ph_no" name="Phone" placeholder="Phone Number" required>
+                  </div>
+                  <div class="form-group col-lg-12  mb-1">
+                    <input type="text" class="form-control " id="city" name="City" placeholder="City" required>
+                  </div>
+                  <div class="form-group col-lg-12 mb-1">
+                    <input type="email" class="form-control " id="email" name="Email" placeholder="Email Address" required>
+                  </div>
+                  <div class="form-group col-lg-12  mb-1">
+                    <textarea class="form-control " rows="3" id="message" name="Message"
+                        placeholder="Message" required></textarea>
+                  </div>
+                  <div class="form-group col-lg-12 mb-2">
+                    <input class="btn_send" name="submit" value="Submit" type="submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ <!-- Package popup -->
+<!-- The Modal -->
+
+	  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	    <div class="modal-header">
+         <h1 class="partner-heading text-center text-white">Download Package</h1>
+           </div>
+      <div class="modal-body">
+   <div class="row">
+    <div class="status alert alert-success" style="display: none"></div>
+        <form class="col-lg " id="myForm" action="./download-package.php" method="POST" onsubmit="return submitUserForm();">
+
+  <div class="row">
+      <div class="form-group col-md-12">
+      <input type="text" class="form-control" name="Name" id="inputname" placeholder="Full Name">
+    </div>
+     <div class="form-group col-md-12">
+      <input type="tel" class="form-control" name="Phone" id="inputPhone" placeholder="Phone No.">
+    </div>
+	<div class="form-group col-lg-12 mb-1">
+                    <input type="email" class="form-control " id="email" name="Email" placeholder="Email Address" required>
+                  </div>
+    <div class="form-group col-md-12">
+      <input type="text" class="form-control" name="City" id="inputLocation" placeholder="City You Live In">
+    </div>
+   </div> 
+   <div class="partner-submit-btn partner-submit-btn m-auto text-center d-block">
+    <input class="btn partner" name="submit" value="Submit" type="submit">
+  <!-- <button type="submit" class="btn">Submit</button> -->
+
+</div>
+</form>
+
+</div>
+
+ </div>
+    </div>
+  </div>
+</div>
+
+
+   
+<!-- The Modal -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	    <div class="modal-header">
+         <h1 class="partner-heading text-center text-white">Book Package</h1>
+           </div>
+      <div class="modal-body">
+	  <div class="row">
+<div class="status alert alert-success" style="display: none"></div>
+        <form class="col-lg traveler-for" id="myForm2" action="./book-package.php" method="POST" onsubmit="return submitUserForm();">
+   <!-- <form class="col-lg traveler-form" id="myForm2"> -->
+     
+   <div class="row">
+      <div class="form-group col-md-12">
+      <input type="text" class="form-control" name="Name" id="inputname" placeholder="Full Name">
+    </div>
+     <div class="form-group col-md-12">
+      <input type="tel" class="form-control" name="Phone" id="inputPhone" placeholder="Phone No.">
+    </div>
+	<div class="form-group col-lg-12 mb-1">
+                    <input type="email" class="form-control " id="email" name="Email" placeholder="Email Address" required>
+                  </div>
+    <div class="form-group col-md-12">
+      <input type="text" class="form-control" name="City" id="inputLocation" placeholder="City You Live In">
+    </div>
+   </div> 
+   <div class="traveler-submit-btn partner-submit-btn m-auto text-center d-block">
+                 <input class="btn partner" name="submit" value="Submit" type="submit">
+
+</div>
+</form>
+
+</div>
+ </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Package popup  End-->
+ 
+<!-- section 1 -->
+<section class="alchor-package-banner text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <div class="alchor-package-banner-text mt-auto mb-auto">
+          <h1 class="desktop-view">We <b><i>Offer</i></b> An <b><i>Experience</i></b> And Not Just A Room</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="discover-sec" id="discover">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="banner-text mob-view  mt-auto mb-auto ">
+          <h1>India’s First Destination Spa </h1>
+          <p class="not-just-a-room">We Offer You An Experience <br>
+            And Not Just A Room</p>
+          <a class="btn m-auto" href="tel:9818005957"  name ="Slider-Call-Button" id="Banner-Phone-Number"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;
+          9818005957</a> </div>
+        <h4 class="discover">DISCOVER</h4>
+        <h2>Alcor Spa Resorts </h2>
+        <!-- video-attachment -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <-----------------hotel-facility------------- -->
+  <section id="hotel-facility">
+    <div class="container">
+      <div class="row hotel-facility-row">
+        <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#GARDEN"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/garden.png">
+                <h5>GARDEN</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#high-2"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/high-2.png">
+                <h5>HIGH 02</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class=" " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tea-longie"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/tea-longie.png">
+                <h5>TEA LOUNGE</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#ORGANIC"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/organic.png">
+                <h5>ORGANIC FARM</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#LUXURY"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/luxury-room.png">
+                <h5>LUXURY ROOM</h5>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="GARDEN" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow1"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/1-2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>Soak Up The Beauty of Nature and Beautiful Gardens.Being A Destination Spa the Resort Has Beautiful flora and Fauna For You To Spend More Time with your family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="high-2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow2"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/2-2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p> For Your To Breathe Better And Relax your Mind And Body We Have Planted More than 10000 Plants Providing High Oxygen Levels </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="tea-longie" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow3"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/tea-longie2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>Being a Destination Spa , Green Tea Is a Must Detoxify your body with the amazing 4 kinds Of exotic flavors available for you to sip all day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="ORGANIC" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow4"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/organic2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>As all guests demand fresh, local and organic food. The organic garden grows 25 varieties of vegetables, herbs and fruit used for consumption at the resort. We encourage guests to visit our organic gardens to see how our fruits and vegetables are grown.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="LUXURY" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow5"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/luxury-room2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>We Offer You An Experience And Not Just A Room Here In Kumbhalgarh we have 10 Super Deluxe Rooms, 10 Luxury Club Rooms with balcony & Mountain Views And 1 Family Super Deluxe Rooms to Relax And Revive.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <-----------------hotel-facility------------- -->
+  <section id="hotel-facility">
+    <div class="container">
+      <div class="row hotel-facility-row">
+        <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#FINE-DINE"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/fine-dine.png">
+                <h5>FINE DINE</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#POOL"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/pool.png">
+                <h5>POOL</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class=" " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#SPA"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/spa-icon.png">
+                <h5>SPA</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#GALA-NIGHT"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/gala-night.png">
+                <h5>GALA NIGHT</h5>
+              </div>
+            </div>
+          </li>
+          <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+            <div class="" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#GAMES-LOUNGE"  role="tab" aria-controls="pills-home" aria-selected="true">
+              <div class=" text-center">
+                <img src="img/games-icon.png">
+                <h5>GAMES LOUNGE</h5>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="FINE-DINE" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow1"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/fine-dine2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>Our Inhouse restaurant goes by the name Punjabbi Adda : Multi Cuisine Restaurant Do ask us for a Complimentary Candle Light Dinner table In the Garden Or By the Pool Side.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="POOL" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow2"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/pool1.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>The Outdoor Infinity Pool is one of the best locations in kumbhalgarh with a view of the fort. With two seperate small pool for kids our Pool Lounge is the perfect place for a family to have fun and enjoy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="SPA" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow3"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/spa-icon2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>The Green Leaf Spa Lounge offers a variety of Body and Foot Spa Treatments . Best Place For Families And Couple to Relax and Pamper Oneself.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="tab-pane fade" id="GALA-NIGHT" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow4"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/gala-night2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>Every Evening We make you feel Special by offering Outdoor Candle Light Dinner tables With Music , winter Bonfire to Enjoy and have a joyful and memorable Evening With your loved ones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="GAMES-LOUNGE" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+            <div class="hotel-facility-garden-inside card collaps arrow5"id="nav-tabContent"> 
+            <div class="row card-body hotel-facility-garden-inside-row tab-content">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <img class="w-100" src="img/games-icon2.png">
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text">
+                <p>The Best Place To Enjoy and Have Fun with your Family is our Games and Activity Lounge offering Indoor and outdoor Games for All Age Groups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-5"><a href="gallary.html" class="btn">GALLARY</a></div>
+</section>
+
+
+  <!-- <-----------------------hotel-facility---------------------- -->
+    <!-- <-----Mobile-start----->
+    <section class="mobile-hotel-facility">
+      <div>
+
+
+          <div class="text-center">
+          <img src="img/garden.png">
+          <h1 class="text-dark fs-4 fw-bolder">GARDEN</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/garden-inside-pic.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">Soak Up The Beauty of Nature and Beautiful Gardens. Being A Destination Spa the Resort Has Beautiful flora and Fauna For You To Spend More Time with your family.</p>
+            </div>
+          </div>
+
+
+          <div class="text-center mt-5">
+          <img src="img/high-2.png">
+          <h1 class="text-dark fs-4 fw-bolder">HIGH 02</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/high-22.png">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">or Your To Breathe Better And Relax your Mind And Body We Have Planted More than 10000 Plants Providing High Oxygen Levels </p>
+            </div>
+          </div>
+
+
+          <div class="text-center mt-5">
+          <img src="img/tea-longie.png">
+          <h1 class="text-dark fs-4 fw-bolder">TEA LOUNGE</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/tea-longie2.png">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">Being a Destination Spa , Green Tea Is a Must Detoxify your body with the amazing 4 kinds Of exotic flavors available for you to sip all day.</p>
+            </div>
+          </div>
+
+
+          <div class="text-center mt-5">
+          <img src="img/organic.png">
+          <h1 class="text-dark fs-4 fw-bolder">ORGANIC FARM</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/organic2.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">As all guests demand fresh, local and organic food. The organic garden grows 25 varieties of vegetables, herbs and fruit used for consumption at the resort. We encourage guests to visit our organic gardens to see how our fruits and vegetables are grown.</p>
+            </div>
+          </div>
+
+
+
+           <div class="text-center mt-5">
+          <img src="img/luxury-room.png">
+          <h1 class="text-dark fs-4 fw-bolder">LUXURY ROOM</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/luxury-room2.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">We Offer You An Experience And Not Just A Room Here In Kumbhalgarh we have 10 Super Deluxe Rooms, 10 Luxury Club Rooms with balcony & Mountain Views And 1 Family Super Deluxe Rooms to Relax And Revive.</p>
+            </div>
+          </div>
+
+
+
+           <div class="text-center mt-5">
+          <img src="img/fine-dine.png">
+          <h1 class="text-dark fs-4 fw-bolder">FINE DINE</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/fine-dine2.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">Our Inhouse restaurant goes by the name Punjabbi Adda : Multi Cuisine Restaurant Do ask us for a Complimentary Candle Light Dinner table In the Garden Or By the Pool Side</p>
+            </div>
+          </div>
+
+
+
+           <div class="text-center mt-5">
+          <img src="img/pool.png">
+          <h1 class="text-dark fs-4 fw-bolder">POOL</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/pool1.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">The Outdoor Infinity Pool is one of the best locations in kumbhalgarh with a view of the fort. With two seperate small pool for kids our Pool Lounge is the perfect place for a family to have fun and enjoy</p>
+            </div>
+          </div>
+
+
+
+           <div class="text-center mt-5">
+          <img src="img/spa-icon.png">
+          <h1 class="text-dark fs-4 fw-bolder">SPA</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/spa-icon2.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">The Green Leaf Spa Lounge offers a variety of Body and Foot Spa Treatments . Best Place For Families And Couple to Relax and Pamper Oneself.</p>
+            </div>
+          </div>
+
+
+
+           <div class="text-center mt-5">
+          <img src="img/gala-night.png">
+          <h1 class="text-dark fs-4 fw-bolder">GALA NIGHT</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/gala-night2.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">Every Evening We make you feel Special by offering Outdoor Candle Light Dinner tables With Music , winter Bonfire to Enjoy and have a joyful and memorable Evening With your loved ones</p>
+            </div>
+          </div>
+
+
+
+          <div class="text-center mt-5">
+          <img src="img/games-icon.png">
+          <h1 class="text-dark fs-4 fw-bolder">GAMES LUONGE</h1>
+        </div>
+           <div class="card shadow m-3 rounded">
+            <div class="card-body">
+              <img class="w-100" src="img/games-icon2.jpg">
+            </div>
+            <div class="text-center card-body py-0">
+              <p class="fs-5 lh-base">The Best Place To Enjoy and Have Fun with your Family is our Games and Activity Lounge offering Indoor and outdoor Games for All Age Groups</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5"><a href="gallary.html" class="btn">GALLARY</a></div>
+      </div>
+    </section>
+
+<!-- <----Mobile end-------------- -->
+
+
+    
+
+ 
+
+  <!-- <----------------packages-book------------------ -->
+    <section class="packages-booking" id="anniversary">
+      <div class="container">
+            <div class="row packages-booking-text justify-content-center">
+		<div class="col-lg-4 col-md-4 col-sm-12 ">
+            <p><img src="img/5.png"class="img-fluid"loading="lazy"></p>
+              <div class="card-body packages-booking-card-body">
+              <h5>Anniversary Package</h5>
+              <ul class="packages-booking-ul">
+                <li>Luxury Rooms</li>
+                <li>Room Decoration</li>
+                <li>Breakfast & Dinner</li>
+                <li>Candle Light Table</li>
+                <li>BBQ & Bonfire</li>
+                <li>1 Couple Spa </li>
+              </ul>
+              <h5 class="m-0 fw-normal">1 Night Per Couple</h5>
+              <h4>₹8500<i>Inc Taxes</i></h4>
+                 <div class="d-flex justify-content-center">
+                <a id="down" class="packages-booking-btn animated-buttonns thar-two pac" data-bs-toggle="modal" data-bs-target="#exampleModal2">Download Package</a>
+				           <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Want to Partner</button> -->
+              </div>
+              <div class="d-flex justify-content-center">
+                <a id="book-pac"  class="packages-booking-btn animated-buttonns thar-two" data-bs-toggle="modal" data-bs-target="#exampleModal3">Book Package</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <----------------popular attractions----------------------- -->
+      <section id="Popular_attraction">
+        <div class="container">
+          <h4 class="text-dark fs-3 fw-bold text-center">Popular Attractions</h4>
+          <div class="row">
+            <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-1.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Kumbhalgarh Fort</h5>
+                </div>
+              </div>
+              <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-2.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Light and Sound Show</h5>
+                </div>
+              </div>
+              <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-3.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Ganga Govardhan Museum</h5>
+                </div>
+              </div>
+              <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-4.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Famous Fish Point</h5>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-5.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Haldigati Museum</h5>
+                </div>
+              </div>
+              <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-6.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Jungle Saffari</h5>
+                </div>
+              </div>
+              <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-7.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Parshuram mandir</h5>
+                </div>
+              </div>
+              <div class="card p-0 col-lg-3 col-md-3 col-sm-12">
+               <img class="card-img w-100" src="img/popular-img-8.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-end">
+                  <h5 class="card-title text-white fs-5 m-0">Ranakpur Jain temple</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- <footer class="bg-dark text-white mt-3"> -->
+  <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+      <!-- <div class="col-lg-4"> -->
+        <!-- <h4><em>About Alcor</em></h4> -->
+        <!-- <p>A Destination Spa For Couples & Families. </p> -->
+        <!-- <p> Live the perfect resort life in the heart of mother nature. Come and visit us! </p> -->
+      <!-- </div> -->
+      <!-- <div class="col-lg-4"> -->
+        <!-- <h4><em>Contact Us</em></h4> -->
+        <!-- <p>Central Reservation : <a href="tel:9818005957" name = "Footer-Phone-Number" id="Footer-Phone-Number">9818005957</a></p> -->
+        <!-- <p>Email : <a href="mailto:Mohnish@Group2001.in " name = "Footer-Email " id="Footer-Email">Mohnish@Group2001.in</a></p> -->
+        <!-- </h4> -->
+      <!-- </div> -->
+      <!-- <div class="col-lg-4"> -->
+        <!-- <h4><em>Follow Us On</em></h4> -->
+        <!-- <ul class="p-0 social-media"> -->
+          <!-- <li><a id="Follow-us-on-Trip-Advisor" name = "Follow-us-on-Trip-Advisor" target="_blank" -->
+                <!-- href="https://www.tripadvisor.in/Hotel_Review-g297669-d14771956-Reviews-Alcor_Spa_Resorts_Kumbhalgarh-Kumbhalgarh_Rajsamand_District_Rajasthan.html)"><i -->
+                  <!-- class="fa fa-tripadvisor" ariahidden="true"></i></a></li> -->
+          <!-- <li><a id="Follow-us-on-Google" name = "Follow-us-on-Google " target="_blank" -->
+                <!-- href="https://www.google.com/maps/place/Alcor+Spa+Resorts+Kumbhalgarh/@31.8202134,77.29539,8z/data=!3m1!4b1!4m8!3m7!1s0x3968238eb5c99d8f:0xa2875752ab0a771!5m2!4m1!1i2!8m2!3d25.1301644!4d73.6214772"><i -->
+                  <!-- class="fa fa-google" ariahidden="true"></i></a></li> -->
+          <!-- <li><a id="Follow-us-on-Facebook" name = "Follow-us-on-Facebook" target="_blank" -->
+                <!-- href="https://www.facebook.com/alcorsparesorts/community/?ref=page_internal&utm_source=FB"><i -->
+                  <!-- class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
+          <!-- <li><a id="Follow-us-on-Youtube" name = "Follow-us-on-Youtube" target="_blank" href="https://www.youtube.com/channel/UCVFBPuAV1J6xpbChSXrsu5w?utm_source=YT"><i -->
+                  <!-- class="fa fa-youtube" aria-hidden="true"></i></a></li> -->
+          <!-- <li><a id="Follow-us-on-Instagram" name = "Follow-us-on-Instagram" target="_blank" href="https://www.instagram.com/alcorsparesorts/?hl=en&utm_source=IG"><i -->
+                  <!-- class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
+          <!-- <li><a id="Follow-us-on-linkedin" name = "Follow-us-on-linkedin" target="_blank" href="https://in.linkedin.com/company/alcorsparesorts/?utm_source=LD"><i -->
+                  <!-- class="fa fa-linkedin" ariahidden="true"></i></a></li> -->
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="copy-right"> -->
+    <!-- <div class="container"> -->
+      <!-- <p class="text-center text-white">Copyright © 2021 Alcor Spa Resorts</p> -->
+    <!-- </div> -->
+  <!-- </div> -->
+  <!-- <a onclick="toggle()" href="javascript:void(0)" class="float" id="menu-share"> <i class="fa fa-comments my-float"></i> </a> -->
+  <!-- <ul class="social-f" id = "social"> -->
+    <!-- <li class="fawp-inner"><a id="Whatsapp-Chat" href="https://api.whatsapp.com/send?phone=919818005957&text=Hi got your number from your website" name = "Whatsapp-Chat"> <i class="fa fa-whatsapp my-float" aria-hidden="true"></i> <span class="name">Whatsapp</span> </a> </li> -->
+    <!-- <li class="faphone-inner"> <a href="tel: 9818005957" id="Phone-Number-Chat" name = "Phone-Number-Chat"> <i class="fa fa-phone my-float" aria-hidden="true"></i> <span class="name">Call Now</span> </a> </li> -->
+    <!-- <li> <a href="mailto:mohnish@group2001.in" id="Email-Chat" name ="Email-Chat"> <i class="fa fa-envelope my-float" aria-hidden="true"></i> <span class="name">Write to us</span> </a> </li> -->
+  <!-- </ul> -->
+<!-- </footer> -->
+<footer class="footer-bg ">
+    <div class="container">
+      <div class="row justify-content-between ">
+        <div class="col-lg-2 col-md-3 footer-columns">
+          <figure>
+            <img src="img/main-logo.png" alt="main-logo" class="img-fluid">
+          </figure>
+        </div>
+        <div class="col-lg-2  col-md-3 footer-columns ">
+         
+          <ul class="ps-lg-3 footer-page-link p-0">
+            <li>About Us</li>
+            <li>Want To Partner</li>
+            <li>Want To Travel</li>
+            <li>Affiliate program</li></ul>
+        </div>
+        <div class="col-lg-3 col-md-4 footer-columns">
+          
+          <ul class="address p-0">
+            <li><a href="tel:9818005957"><i class="fa fa-phone"></i>9818005957</a></li>
+            <li><a href="mailto:mohnish@group2001.in"><i class="fa fa-envelope"></i>mohnish@group2001.in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 footer-columns">
+          <h4>
+            Follow Us On</h4>
+           
+                     <ul class="p-0 social-media">
+         
+                <li><a href=""> <i class="fa fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
+				</ul>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="copy-write ">
+      <p class="mb-0">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022 Alcor Spa Resorts </p>
+    </div>
+ <a class="share-bx" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="fa fa-reply" aria-hidden="true"></i>Share</a>
+   
+    <a onclick="toggle()" href="javascript:void(0)" class="float" id="menu-share"> <i class="fa fa-comments my-float" aria-hidden="true"></i> </a>
+    <ul class="social-f" id="social">
+      <li class="fawp-inner"><a id="Whatsapp-Chat" href="https://api.whatsapp.com/send?phone=9818005957&amp;text=Hi got your number from your website" name="Whatsapp-Chat"> <i class="fa fa-whatsapp my-float" aria-hidden="true"></i> <span class="name">Whatsapp</span> </a> </li>
+      <li class="faphone-inner"> <a href="tel:9818005957" id="Phone-Number-Chat" name="Phone-Number-Chat"> <i class="fa fa-phone my-float" aria-hidden="true"></i> <span class="name">Call Now</span> </a> </li>
+      <li> <a href="mailto:mohnish@group2001.in" id="Email-Chat" name="Email-Chat"> <i class="fa fa-envelope my-float" aria-hidden="true"></i> <span class="name">Write to us</span> </a> </li>
+    </ul>
+	
+  </footer>
+  <script src="./js/path.js"></script>
+<script>
+  function toggle(){
+    let btn = document.getElementById("social");
+    if(btn.style.display === "block"){
+      btn.style.display = " none";
+    }else{
+      btn.style.display = "block";
+    }
+  }
+</script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js" ></script> 
+<script src="js/bootstrap.bundle.min.js" async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" async></script> 
+<script src="owlcarousel/owl.carousel.min.js" ></script> 
+  <style>
+    li .contact-link{
+      text-decoration: none;
+    }
+    li .contact-link:hover{
+      text-decoration: underline;
+    }
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        /* left: 40px; */
+        background-color: #6aa611;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        animation: bot-to-top 2s ease-out;
+        border: 1px solid #fff;
+      }
+
+      a#menu-share+.social-f {
+        visibility: hidden;
+      }
+
+      .social-f {
+        position: fixed;
+        right: 40px;
+        padding-bottom: 100px;
+        bottom: 0;
+        z-index: 100;
+      }
+
+      .social-f li {
+        list-style: none;
+        /* margin-bottom: 10px; */
+        padding-bottom: 0px;
+      }
+
+      .float:hover {
+        background-color: #FFF;
+        color: #a53e88;
+      }
+
+      a#menu-share:hover+.social-f {
+        visibility: visible;
+        /* animation: scale-in 0.5s; */
+      }
+
+      .social-f li a {
+        background-color: #6aa611;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        width: 60px;
+        height: 60px;
+        display: block;
+        border: 1px solid #fff;
+      }
+
+      .social-wp li a {
+        width: 100% !important;
+        border-radius: 5px !important;
+        padding: 0px 5px 0px 5px !important;
+        text-align: left !important;
+        height: unset !important;
+        margin-bottom: 6px !important;
+      }
+
+      .my-float {
+        font-size: 24px !important;
+        margin-top: 18px;
+      }
+
+      a#menu-share:hover>i {
+        animation: rotate-out 0.5s ease-out;
+      }
+
+      .fawp-inner .social-wp {
+        display: none;
+      }
+
+      li.fawp-inner:hover .social-wp {
+        display: block;
+      }
+
+      ul.social-f1 {
+        display: none;
+      }
+
+      li.fawp-inner:hover .social-f1 {
+        display: block;
+      }
+
+      .social-f:hover {
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #FFF;
+      }
+
+      li.faphone-inner:hover .social-f1 {
+        display: block;
+      }
+
+      .social-f1 {
+        position: fixed;
+        right: 100px;
+        padding-bottom: 0px;
+        bottom: 175px;
+        z-index: 100;
+      }
+
+      .fawp-inner .social-wp {
+        position: fixed;
+        right: 100px;
+        padding-bottom: 0px;
+        bottom: 230px;
+        z-index: 100;
+      }
+
+      span.name {
+        position: relative;
+        left: -106px;
+        width: 100px;
+        display: inline-block;
+        top: -33px;
+        font-size: 20px;
+        color: #fff;
+        background: #6aa611;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+
+      .social-f1 li a {
+        background-color: #6aa611;
+        color: #FFF;
+        border-radius: 4px;
+        text-align: left;
+        box-shadow: 2px 2px 3px #999;
+        width: 100%;
+        display: block;
+        height: unset;
+        padding: 0px 8px 0px 5px !important;
+      }
+
+      .social-f1 li {
+        margin-top: 6px;
+      }
+
+      @keyframes rotate-out {
+        0% {
+          transform: rotate(360deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punarnava Resort & Spa</title>
+    <meta
+      name="description"
+      content="In the Foothills of the Famous World Heritage Site Kumbhalgarh fort & the Great Wall Of India"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/new design images/cropped-punarnava-favicon-180x180.png"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome-all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./js/captcha.js" async defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16632602442"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16632602442");
+    </script>
+    <!--Gtag -->
+    <script>
+      gtag("config", "AW-16632602442/c9nbCJHa9cIZEMq-hfs9", {
+        phone_conversion_number: "7217011481",
+      });
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JSLBDNPSF7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JSLBDNPSF7");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KZTCJQTN");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KZTCJQTN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-4">
+            <a class="navbar-brand" href="https://www.thepunarnava.com">
+              <img src="img/new-wins-logo.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="col-lg-8 col-8">
+            <a
+              href="tel:7217011481"
+              class="btn buttonf float-end"
+              id="Header-Book-Now"
+              >7217011481
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      function submitforms() {
+        var name = $("#dealname").val();
+        var email = $("#dealemail").val();
+        var mobile = $("#dealmobile").val();
+        var city = $("#dealcity").val();
+
+        var location =
+          "https://api.neodove.com/integration/custom/2b6daeac-ffd7-4d17-bfdd-00f5cbad1b1e/leads";
+
+        $.post(
+          location,
+          {
+            name: name,
+            mobile: mobile,
+            email: email,
+            city: city,
+          },
+          function (data) {
+            window.location.href = 'https://thepunarnava.com/BookingPartner/thankyou.html';
+            // window.location.href =
+            //   "http://127.0.0.1:5500/public/Booking/thankyou.html";
+          }
+        );
+      }
+    </script>
+
+    <section class="call-back">
+      <div
+        class="modal fade"
+        id="exampleModal41"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel41"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span>X</span>
+            </button>
+            <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">
+                Get A Call Back
+              </h1>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div
+                  class="status alert alert-success"
+                  style="display: none"
+                ></div>
+                <form
+                  class="col-lg traveler-for"
+                  id="myForm4"
+                  action="./booking-form.php"
+                  method="POST"
+                  onsubmit="return submitUserForm();"
+                >
+                  <!-- <form class="col-lg traveler-form" id="myForm2"> -->
+
+                  <div class="row">
+                    <div class="form-group col-md-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Name"
+                        id="inputname"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                    <div class="form-group col-lg-12 mb-1">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="Email"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-md-12">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        name="Phone"
+                        id="inputPhone"
+                        placeholder="Phone No."
+                      />
+                    </div>
+
+                    <!-- <div class="form-group col-md-12">
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+  </div> -->
+                  </div>
+                  <div
+                    class="traveler-submit-btn partner-submit-btn m-auto text-center d-block"
+                  >
+                    <input
+                      class="btn partner"
+                      name="submit"
+                      value="Submit"
+                      type="submit"
+                      onclick="submitCallBackforms()"
+                    />
+                    <!-- <button type="submit" class="btn">Submit</button> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best">
+      <div
+        class="modal fade book_pop"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">
+                Get Best Prices
+              </h1>
+            </div>
+            <div class="modal-body">
+              <div
+                class="status alert alert-success"
+                style="display: none"
+              ></div>
+              <form
+                class="row"
+                id="contact-form"
+                name="contact-form"
+                action="./book-package.php"
+                method="POST"
+                onsubmit="return submitUserForm();"
+              >
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    id="dealname"
+                    name="Name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="dealmobile"
+                    name="Phone"
+                    placeholder="Phone No."
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="dealemail"
+                    name="Email"
+                    placeholder="Enter Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="dealcity"
+                    name="City"
+                    placeholder="City You Live  In"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 mb-2">
+                  <input
+                    class="btn_send"
+                    name="submit"
+                    value="Submit"
+                    type="button"
+                    onclick="submitforms()"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="best">
+      <div
+        class="modal fade book_pop"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel2"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">
+                Download Package
+              </h1>
+            </div>
+            <div class="modal-body">
+              <div
+                class="status alert alert-success"
+                style="display: none"
+              ></div>
+              <form
+                class="row"
+                id="package-form"
+                name="contact-form"
+                action="./book-package.php"
+                method="POST"
+                onsubmit="return submitUserForm();"
+              >
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    id="packagename"
+                    name="Name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="packagemobile"
+                    name="Phone"
+                    placeholder="Phone No."
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="packageemail"
+                    name="Email"
+                    placeholder="Enter Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="packagecity"
+                    name="City"
+                    placeholder="City You Live  In"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 mb-2">
+                  <input
+                    class="btn_send"
+                    name="button"
+                    value="Submit"
+                    type="button"
+                    onclick="submitpackageforms()"
+                  />
+                </div>
+              </form>
+
+              <script>
+                function submitpackageforms() {
+                  var name = $("#packagename").val();
+                  var email = $("#packageemail").val();
+                  var mobile = $("#packagemobile").val();
+                  var city = $("#packagecity").val();
+
+                  var location =
+                    "https://api.neodove.com/integration/custom/2b6daeac-ffd7-4d17-bfdd-00f5cbad1b1e/leads";
+
+                  $.post(
+                    location,
+                    {
+                      name: name,
+                      mobile: mobile,
+                      email: email,
+                      city: city,
+                    },
+                    function (data) {
+                      window.location.href =
+                        "https://thepunarnava.com/BookingPartner/thankyou.html";
+                    }
+                  );
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-header">
+            <h1 class="partner-heading">Share with friends</h1>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <h4>Sharing link</h4>
+              <p><a class="btn-copy btn">Copy link</a></p>
+              <h4>Or share on</h4>
+              <ul class="socialIcons">
+                <li class="whatsApp">
+                  <a href="#"
+                    ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                    ><span>WhatsApp</span></a
+                  >
+                </li>
+                <li class="facebook">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ><span>Facebook</span></a
+                  >
+                </li>
+                <li class="email">
+                  <a href="#"
+                    ><i class="fa fa-envelope" aria-hidden="true"></i
+                    ><span>Gmail</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- book now Popup -->
+    <div
+      class="modal fade book_pop"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 class="text-center">Get A Call Back</h2>
+                <div class="contact_form">
+                  <div class="cont_txt heading">
+                    <div
+                      class="status alert alert-success"
+                      style="display: none"
+                    ></div>
+                    <form
+                      class="row p-3"
+                      id="contact-form"
+                      name="contact-form"
+                      action="./booking-form.php"
+                      method="POST"
+                      onsubmit="return submitUserForm();"
+                    >
+                      <div class="form-group col-lg-6 mb-1">
+                        <input
+                          type="text"
+                          id="callname"
+                          name="Name"
+                          class="form-control"
+                          placeholder="Full Name"
+                          required
+                        />
+                      </div>
+                      <!-- <div class="form-group col-lg-6 ps-lg-0 mb-1">
+                    <input type="text" id="name" name="Lastname" class="form-control" placeholder="Last Name" required>
+                  </div> -->
+                      <div class="form-group col-lg-12 mb-1">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="callmobile"
+                          name="Phone"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-lg-12 mb-1">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="callcity"
+                          name="City"
+                          placeholder="City"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-lg-12 mb-1">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="callemail"
+                          name="Email"
+                          placeholder="Email Address"
+                          required
+                        />
+                      </div>
+                      <!-- <div class="form-group col-lg-12  mb-1">
+                    <textarea class="form-control " rows="3" id="message" name="Message"
+                        placeholder="Message" required></textarea>
+                  </div> -->
+                      <div class="form-group col-lg-12 mb-2">
+                        <input
+                          class="btn_send"
+                          name="submit"
+                          value="Submit"
+                          type="submit"
+                          onclick="submitCallbackforms()"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Package popup -->
+    <!-- The Modal -->
+
+    <!-- The Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-header">
+            <h1 class="partner-heading text-center text-white">Book Package</h1>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div
+                class="status alert alert-success"
+                style="display: none"
+              ></div>
+              <form
+                class="col-lg traveler-for"
+                id="myForm2"
+                action="./book-package.php"
+                method="POST"
+                onsubmit="return submitUserForm();"
+              >
+                <!-- <form class="col-lg traveler-form" id="myForm2"> -->
+
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <input
+                      type="text"
+                      id="bookname"
+                      name="Name"
+                      class="form-control"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="bookmobile"
+                      name="Phone"
+                      placeholder="Phone No."
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-lg-12 mb-1">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="bookemail"
+                      name="Email"
+                      placeholder="Enter Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="bookcity"
+                      name="City"
+                      placeholder="City You Live  In"
+                      required
+                    />
+                  </div>
+                </div>
+                <div
+                  class="traveler-submit-btn partner-submit-btn m-auto text-center d-block"
+                >
+                  <input
+                    class="btn partner"
+                    name="button"
+                    value="Submit"
+                    type="submit"
+                    onclick="submitbookforms()"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function submitbookforms() {
+        var name = $("#bookname").val();
+        var email = $("#bookemail").val();
+        var mobile = $("#bookmobile").val();
+        var city = $("#bookcity").val();
+
+        var location =
+          "https://api.neodove.com/integration/custom/2b6daeac-ffd7-4d17-bfdd-00f5cbad1b1e/leads";
+
+        $.post(
+          location,
+          {
+            name: name,
+            mobile: mobile,
+            email: email,
+            city: city,
+          },
+          function (data) {
+            window.location.href =
+              "https://thepunarnava.com/BookingPartner/thankyou.html";
+          }
+        );
+      }
+    </script>
+    <section class="best">
+      <div
+        class="modal fade book_pop"
+        id="exampleModal22"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel22"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">
+                Want To Travel
+              </h1>
+            </div>
+            <div class="modal-body">
+              <div
+                class="status alert alert-success"
+                style="display: none"
+              ></div>
+              <form
+                class="row"
+                id="contact-form"
+                name="contact-form"
+                action="./book-package.php"
+                method="POST"
+                onsubmit="return submitUserForm();"
+              >
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    id="Travelname"
+                    name="Name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Travelmobile"
+                    name="Phone"
+                    placeholder="Phone No."
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Travelemail"
+                    name="Email"
+                    placeholder="Enter Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Travelcity"
+                    name="City"
+                    placeholder="City You Live  In"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 mb-2">
+                  <input
+                    class="btn_send"
+                    name="submit"
+                    value="Submit"
+                    type="submit"
+                    onclick="submitTravelforms()"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="best">
+      <div
+        class="modal fade book_pop"
+        id="exampleModal23"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel23"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">
+                Want To Partner
+              </h1>
+            </div>
+            <div class="modal-body">
+              <div
+                class="status alert alert-success"
+                style="display: none"
+              ></div>
+              <form
+                class="row"
+                id="contact-form"
+                name="contact-form"
+                action="./book-package.php"
+                method="POST"
+                onsubmit="return submitUserForm();"
+              >
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    id="Partnername"
+                    name="Name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Partnermobile"
+                    name="Phone"
+                    placeholder="Phone No."
+                    required
+                  />
+                </div>
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Partneremail"
+                    name="Email"
+                    placeholder="Enter Email Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 p-0 mb-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Partnercity"
+                    name="City"
+                    placeholder="City You Live  In"
+                    required
+                  />
+                </div>
+
+                <div class="form-group col-lg-12 mb-2">
+                  <input
+                    class="btn_send"
+                    name="submit"
+                    value="Submit"
+                    type="submit"
+                    onclick="submitPartnerform()"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package popup  End-->
+
+    <!-- section 1 -->
+    <section class="alchor-package-banner text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="alchor-package-banner-text mt-auto mb-auto"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Punarnava Resort & Spa -->
+
+    <section class="about-us">
+      <div class="container">
+        <div class="text-center pb-5 fix-btn">
+          <button class="avail">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal1"
+              >Get Best Deals
+            </a>
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="img-box">
+              <img
+                src="./img/new design images/about_11zon.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-12">
+            <div class="content-box">
+              <img src="img/new-wins-logo.png" alt="" />
+              <h2>About Punarnava Resort & Spa</h2>
+              <p>
+                The Punarnava Resort & Spa is nestled in the scintillating
+                sublime region of Uttarakhand Himalayas in Northern India and
+                exhibits harmonic coexistence with nature. Renowned as
+                ‘Devbhumi’, Uttarakhand (A land of the Gods), this region is
+                blessed with natural beauty, divinity, and spiritual vibrations.
+                We welcome you at this unique luxurious wellness destination
+                aesthetically parked in the dense forest of Mussoorie with a
+                spectacular & stunning George Everest Mountain View. Imbibe the
+                holistic Lifestyle experience in this awe-inspiring existential
+                nature of mystical divinity. Rejoice in the transformation of
+                inner rejuvenation and inner awakening.
+              </p>
+
+              <button class="service">
+                <a href="tel:7217011481" class="want-partner"
+                  >Call & Connect
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <----------------welcome celebrity------------------ -->
+    <section class="packages-booking pack" id="Gateway">
+      <div class="container">
+        <h2>
+          <span class="wc-uppertext">Welcome</span> Celebrity At Punarnava
+        </h2>
+        <div class="mobile-slider row packages-booking-text">
+          <div class="mobile-slide col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/wc-img1.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+          </div>
+          <div class="mobile-slide col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/wc-img2.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+          </div>
+          <div class="mobile-slide col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/wc-img3.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots d-flex justify-content-center mt-3"></div>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="tel:7217011481" class="btn">Call & Connect</a>
+      </div>
+    </section>
+
+    <!-- <-----------------hotel-facility------------- -->
+    <section id="hotel-facility">
+      <div class="container">
+        <div class="row hotel-facility-row">
+          <ul
+            class="nav nav-pills mb-3 justify-content-between"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class="active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#GARDEN"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/summer-time_11683055.png" />
+                  <h5>Weekend Gateway</h5>
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class=""
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#high-2"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/red-carpet_4362464.png" />
+                  <h5>Corporate Events</h5>
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class=" "
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#tea-longie"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/location_3754960.png" />
+                  <h5>Destination Wedding</h5>
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class=""
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#ORGANIC"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/photo-camera_104461.png" />
+                  <h5>Pre-Wedding Shoot</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="GARDEN"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow1"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/Weekend_43_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Escape to Punarnava Resort & Spa in Mussoorie for a
+                      relaxing weekend. Enjoy stunning views of the Himalayas
+                      from cozy, comfortable rooms. Unwind at our spa and taste
+                      delicious, fresh food at our restaurant. Whether you want
+                      adventure or peace, our resort has everything you need.
+                      Book now for an unforgettable getaway!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="high-2"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow2"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img//new design images/corporate-events_20_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Elevate your corporate gatherings with seamless
+                      professionalism and unparalleled service. From conferences
+                      to team-building retreats, our tailored solutions ensure
+                      every detail is meticulously managed, fostering
+                      productivity, collaboration, and lasting success.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="tea-longie"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow3"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/destination-wedding-1_21_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Celebrate love in an unforgettable setting with a
+                      destination wedding. From exotic beaches to majestic
+                      mountains, choose a dream location to exchange vows
+                      surrounded by breathtaking scenery, creating memories to
+                      last a lifetime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="ORGANIC"
+              role="tabpanel"
+              aria-labelledby="pills-disabled-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow4"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/g1_23_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Capture the magic of your love story with a pre-wedding
+                      shoot. From picturesque landscapes to intimate moments,
+                      this session immortalizes the joy and anticipation before
+                      your big day, creating timeless memories to cherish
+                      forever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hotel-facility" class="hotel-facility-2-row">
+      <div class="container">
+        <div class="row hotel-facility-row">
+          <ul
+            class="nav nav-pills mb-3 justify-content-between"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class="active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#FINE-DINE"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/swimming-pool_1925949.png" />
+                  <h5>Swimming Pool</h5>
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class=""
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#POOL"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/garden_17039616.png" />
+                  <h5>Specious Lawn</h5>
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class=" "
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#SPA"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/cinema_14405628.png" />
+                  <h5>Amphi Theater</h5>
+                </div>
+              </div>
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-12" role="presentation">
+              <div
+                class=""
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#GALA-NIGHT"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                <div class="text-center">
+                  <img src="img/new design images/vegetarian_5954002.png" />
+                  <h5>Pure Veg Restaurant</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="FINE-DINE"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow1"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/Swimming pool_40_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Dive into our stunning pool at Punarnava Resort & Spa and
+                      enjoy breathtaking mountain views. Experience the perfect
+                      blend of relaxation and natural beauty as you swim
+                      surrounded by the majestic Himalayas. Whether you're
+                      taking a leisurely dip or doing laps, our pool offers an
+                      unforgettable experience. Join us for a refreshing swim
+                      with a view you’ll never forget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="POOL"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow2"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/lAWN_28_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Dive into our stunning pool at Punarnava Resort & Spa and
+                      enjoy breathtaking mountain views. Experience the perfect
+                      blend of relaxation and natural beauty as you swim
+                      surrounded by the majestic Himalayas. Whether you're
+                      taking a leisurely dip or doing laps, our pool offers an
+                      unforgettable experience. Join us for a refreshing swim
+                      with a view you’ll never forget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="SPA"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow3"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/amphi theater_13_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Discover the charm of our amphitheater at Punarnava Resort
+                      & Spa. Nestled amidst the natural beauty of Mussoorie,
+                      this outdoor venue is perfect for hosting events,
+                      performances, and gatherings. Enjoy live entertainment or
+                      serene evenings under the stars in this unique setting.
+                      Experience unforgettable moments in our picturesque
+                      amphitheater, where nature meets culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="GALA-NIGHT"
+              role="tabpanel"
+              aria-labelledby="pills-disabled-tab"
+              tabindex="0"
+            >
+              <div
+                class="hotel-facility-garden-inside card collaps arrow4"
+                id="nav-tabContent"
+              >
+                <div
+                  class="row card-body hotel-facility-garden-inside-row tab-content"
+                >
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img
+                      class="w-100"
+                      src="img/new design images/restaurant_37_11zon.jpg"
+                    />
+                  </div>
+                  <div
+                    class="col-lg-7 col-md-7 col-sm-12 hotel-facility-garden-inside-text"
+                  >
+                    <p>
+                      Delight in the flavors of our pure veg restaurant at
+                      Punarnava Resort & Spa. Offering a variety of delicious,
+                      vegetarian dishes crafted from fresh, locally sourced
+                      ingredients, our restaurant caters to all tastes. Enjoy a
+                      healthy and satisfying dining experience in a serene,
+                      elegant setting with stunning views of Mussoorie. Savor
+                      every bite and discover the best in vegetarian cuisine
+                      with us.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <-----------------------hotel-facility---------------------- -->
+    <!-- <-----Mobile-start----->
+    <section class="mobile-hotel-facility">
+      <div>
+        <div class="text-center">
+          <img src="img/new design images/summer-time_11683055.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Weekend Gateway</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img
+              class="w-100"
+              src="img/new design images/Weekend_43_11zon.jpg"
+            />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Escape to Punarnava Resort & Spa in Mussoorie for a relaxing
+              weekend. Enjoy stunning views of the Himalayas from cozy,
+              comfortable rooms. Unwind at our spa and taste delicious, fresh
+              food at our restaurant. Whether you want adventure or peace, our
+              resort has everything you need. Book now for an unforgettable
+              getaway!
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/red-carpet_4362464.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Corporate Events</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img
+              class="w-100"
+              src="img//new design images/corporate-events_20_11zon.jpg"
+            />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Elevate your corporate gatherings with seamless professionalism
+              and unparalleled service. From conferences to team-building
+              retreats, our tailored solutions ensure every detail is
+              meticulously managed, fostering productivity, collaboration, and
+              lasting success.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/location_3754960.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Destination Wedding</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img
+              class="w-100"
+              src="img/new design images/destination-wedding-1_21_11zon.jpg"
+            />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Celebrate love in an unforgettable setting with a destination
+              wedding. From exotic beaches to majestic mountains, choose a dream
+              location to exchange vows surrounded by breathtaking scenery,
+              creating memories to last a lifetime.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/photo-camera_104461.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Pre-Wedding Shoot</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img class="w-100" src="img/new design images/g1_23_11zon.jpg" />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Capture the magic of your love story with a pre-wedding shoot.
+              From picturesque landscapes to intimate moments, this session
+              immortalizes the joy and anticipation before your big day,
+              creating timeless memories to cherish forever.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/swimming-pool_1925949.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Swimming Pool</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img
+              class="w-100"
+              src="img/new design images/Swimming pool_40_11zon.jpg"
+            />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Dive into our stunning pool at Punarnava Resort & Spa and enjoy
+              breathtaking mountain views. Experience the perfect blend of
+              relaxation and natural beauty as you swim surrounded by the
+              majestic Himalayas. Whether you're taking a leisurely dip or doing
+              laps, our pool offers an unforgettable experience. Join us for a
+              refreshing swim with a view you’ll never forget.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/garden_17039616.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Specious Lawn</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img class="w-100" src="img/new design images/lAWN_28_11zon.jpg" />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Dive into our stunning pool at Punarnava Resort & Spa and enjoy
+              breathtaking mountain views. Experience the perfect blend of
+              relaxation and natural beauty as you swim surrounded by the
+              majestic Himalayas. Whether you're taking a leisurely dip or doing
+              laps, our pool offers an unforgettable experience. Join us for a
+              refreshing swim with a view you’ll never forget.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/cinema_14405628.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Amphi Theater</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img
+              class="w-100"
+              src="img/new design images/amphi theater_13_11zon.jpg"
+            />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Discover the charm of our amphitheater at Punarnava Resort & Spa.
+              Nestled amidst the natural beauty of Mussoorie, this outdoor venue
+              is perfect for hosting events, performances, and gatherings. Enjoy
+              live entertainment or serene evenings under the stars in this
+              unique setting. Experience unforgettable moments in our
+              picturesque amphitheater, where nature meets culture.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <img src="img/new design images/vegetarian_5954002.png" />
+          <h1 class="text-dark fs-4 fw-bolder">Pure Veg Restaurant</h1>
+        </div>
+        <div class="card shadow m-3 rounded">
+          <div class="card-body">
+            <img
+              class="w-100"
+              src="img/new design images/restaurant_37_11zon.jpg"
+            />
+          </div>
+          <div class="text-center card-body py-0">
+            <p class="fs-5 lh-base">
+              Delight in the flavors of our pure veg restaurant at Punarnava
+              Resort & Spa. Offering a variety of delicious, vegetarian dishes
+              crafted from fresh, locally sourced ingredients, our restaurant
+              caters to all tastes. Enjoy a healthy and satisfying dining
+              experience in a serene, elegant setting with stunning views of
+              Mussoorie. Savor every bite and discover the best in vegetarian
+              cuisine with us.
+            </p>
+          </div>
+        </div>
+
+        <!-- <----Mobile end-------------- -->
+
+        <!-- <-------------gallary-btn---------- -->
+      </div>
+    </section>
+
+    <!-- <----------------packages-book------------------ -->
+    <section class="packages-booking pack" id="Gateway">
+      <div class="container">
+        <h2>Rooms</h2>
+        <div class="row packages-booking-text">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/lr-1_29_11zon.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+            <div class="card-body packages-booking-card-body">
+              <h5>Anand & Anant Villa <span>All Meals Package</span></h5>
+
+              <h4>₹48000<i>+ Taxes</i></h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  >Download Package</a
+                >
+                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Want to Partner</button> -->
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                  >Book Package</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/lr-2_30_11zon.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+            <div class="card-body packages-booking-card-body">
+              <h5>Heritage Cottage <span>All Meals Package</span></h5>
+
+              <h4>₹20000<i>+ Taxes</i></h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  >Download Package</a
+                >
+                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Want to Partner</button> -->
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                  >Book Package</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/lr-3_31_11zon.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+            <div class="card-body packages-booking-card-body">
+              <h5>Deluxe Room<span>All Meals Package</span></h5>
+
+              <h4>₹16000<i>+ Taxes</i></h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  >Download Package</a
+                >
+                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Want to Partner</button> -->
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                  >Book Package</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row packages-booking-text">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/lr-4_32_11zon.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+            <div class="card-body packages-booking-card-body">
+              <h5>Studio Suite Room<span>All Meals Package</span></h5>
+
+              <h4>₹18000<i>+ Taxes</i></h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  >Download Package</a
+                >
+                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Want to Partner</button> -->
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                  >Book Package</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <p>
+              <img
+                src="img/new design images/lr-5_33_11zon.jpg"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </p>
+            <div class="card-body packages-booking-card-body">
+              <h5>Family Suite Room <span>All Meals Package</span></h5>
+
+              <h4>₹32000<i>+ Taxes</i></h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  >Download Package</a
+                >
+                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#myModal">Want to Partner</button> -->
+              </div>
+              <div class="d-flex justify-content-center">
+                <a
+                  class="packages-booking-btn animated-buttonns thar-two"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                  >Book Package</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="gallary.html" class="btn">Photos & Videos</a>
+      </div>
+    </section>
+
+    <section class="adon">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="cont">
+              <h2>Experience the Calmness in the Middle of Green Jungle</h2>
+
+              <p class="text-center">
+                During summers, enjoy the forest whispering with the cool breeze
+                caressing your body. See the splendor of the new leaves on trees
+                and the fresh beauty of nature at its full bloom. During rains
+                delight in the chirping of rare birds, relish the juicy seasonal
+                fruits in the alluring landscape of a natural waterfall. During
+                winters bask in the warmth of sunlight surrounded by life
+                -saving herbs, savoring crisp, hot & bio-dynamic food served
+                around a bonfire. During spring enjoy the blooming of natural
+                wildflowers celebrating the BasantMahotsav in its full glory.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kumblaghr-cards jwai">
+      <div class="container">
+        <h2>Explore Mussoori</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kumblaghr-cards-inner">
+              <img src="./img/new design images/aa-1_1_11zon.jpg" alt="" />
+              <span class="locat"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  ></path>
+                </svg>
+                5 <span>km</span></span
+              >
+              <div class="card-iner">
+                <h3>Kempty Falls</h3>
+                <p>
+                  A mesmerizing waterfall located 15 km from Mussoorie, Kempty
+                  Falls is perfect for picnics, swimming, and relaxation amidst
+                  the natural beauty. The cascading waters and serene
+                  surroundings make it a popular spot for tourists and nature
+                  lovers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kumblaghr-cards-inner">
+              <img src="./img/new design images/aa-2_2_11zon.jpg" alt="" />
+              <span class="locat"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  ></path>
+                </svg>
+                3 <span>km</span></span
+              >
+              <div class="card-iner">
+                <h3>Landour</h3>
+                <p>
+                  A quaint, serene town near Mussoorie, Landour is known for its
+                  colonial charm, scenic views, and peaceful walks. It offers a
+                  glimpse into the region's history and culture, making it an
+                  ideal destination for relaxation and tranquility.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kumblaghr-cards-inner">
+              <img src="./img/new design images/aa-3_3_11zon.jpg" alt="" />
+              <span class="locat"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  ></path>
+                </svg>
+                4 <span>km</span></span
+              >
+              <div class="card-iner">
+                <h3>Dalai Hills</h3>
+                <p>
+                  Located near Happy Valley, Dalai Hills features a serene
+                  Buddha statue and prayer flags. It offers panoramic views and
+                  a tranquil atmosphere, making it a perfect spot for
+                  meditation, relaxation, and experiencing Tibetan spiritual
+                  culture
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kumblaghr-cards-inner">
+              <img src="./img/new design images/aa-4_4_11zon.jpg" alt="" />
+              <span class="locat"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  ></path>
+                </svg>
+                16 <span>km</span></span
+              >
+              <div class="card-iner">
+                <h3>Nag Tibba Trek</h3>
+                <p>
+                  Nag Tibba is the highest peak in the lower Himalayas, offering
+                  a thrilling trekking experience. The trek provides stunning
+                  views, diverse flora and fauna, and opportunities for camping,
+                  making it a favorite among adventure enthusiasts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kumblaghr-cards-inner">
+              <img src="./img/new design images/aa-5_5_11zon.jpg" alt="" />
+              <span class="locat"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  ></path>
+                </svg>
+                6 <span>km</span></span
+              >
+              <div class="card-iner">
+                <h3>Cloud's End</h3>
+                <p>
+                  Cloud's End marks Mussoorie's geographic end, surrounded by
+                  dense forests. This peaceful retreat offers spectacular views,
+                  serene walks, and a perfect escape from the town's hustle and
+                  bustle, ideal for nature lovers seeking solitude.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kumblaghr-cards-inner">
+              <img src="./img/new design images/aa-6_6_11zon.jpg" alt="" />
+              <span class="locat"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#fff"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  ></path>
+                </svg>
+                12 <span>km</span></span
+              >
+              <div class="card-iner">
+                <h3>White Water Rafting</h3>
+                <p>
+                  Mussoorie offers thrilling white water rafting in icy
+                  Himalayan rivers. This adventure sport provides an adrenaline
+                  rush as you navigate challenging rapids, enjoying breathtaking
+                  natural scenery and an unforgettable outdoor experience for
+                  adventure seekers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pb-5 fix-btn">
+          <button class="avail">
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal1"
+              >Get Best Deal
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="sticky">
+      <p>
+        <a href="tel:7217011481"><img src="./img/phone.svg" alt="" /></a>
+      </p>
+      <p>
+        <a
+          href="https://api.whatsapp.com/send?phone=916367351516&text=Hi,%20got%20your%20number%20from%20Punarnava%20website."
+          ><img src="img/whatsapp.svg" alt=""
+        /></a>
+      </p>
+    </div>
+    <!-- What Our Guest Say -->
+    <section class="guest-say">
+      <div class="container">
+        <h2 class="page-heading h2">What Our Guests Says</h2>
+        <div class="gs-video-section-wrap">
+          <div class="gs-video-block">
+            <iframe
+              src="https://www.youtube.com/embed/IXnNKtrVJeM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="gs-video-block">
+            <iframe
+              src="https://www.youtube.com/embed/g71ExmkeOwI"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="gs-video-block">
+            <iframe
+              src="https://www.youtube.com/embed/WGpRskfpRxM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="gs-video-block">
+            <iframe
+              src="https://www.youtube.com/embed/wOUwPVDQl5I"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <!-- <section class="gallery-section">-->
+    <!--  <div class="gallery-section-container">-->
+    <!--      <h2 class="page-heading h2">Gallery</h2>-->
+    <!--      <div class="gallery-section-wrap">-->
+    <!--          <div class="gallery-block">-->
+    <!--             <img width="100%" height="100%" src="img/new design images/g1_23_11zon.jpg" alt="Thepunarnava">-->
+    <!--          </div>-->
+    <!--          <div class="gallery-block">-->
+    <!--              <img width="100%" height="100%" src="img/new design images/g2_24_11zon.jpeg" alt="Thepunarnava">-->
+    <!--           </div>-->
+    <!--           <div class="gallery-block">-->
+    <!--              <img width="100%" height="100%" src="img/new design images/g3_25_11zon.jpg" alt="Thepunarnava">-->
+    <!--           </div>-->
+    <!--           <div class="gallery-block">-->
+    <!--              <img width="100%" height="100%" src="img/new design images/g4_26_11zon.jpg" alt="Thepunarnava">-->
+    <!--           </div>-->
+    <!--      </div>-->
+    <!--  </div>-->
+    <!--</section>-->
+    <div class="d-flex justify-content-center mt-5">
+      <a href="gallary.html" class="btn">Photos & Videos</a>
+    </div>
+
+    <!-- Lcoation Section -->
+    <section class="map">
+      <div class="container-fluid">
+        <div class="row map-c">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.630546746664!2d78.0400491!3d30.4162714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7ffdd2a351d%3A0xd70fc800adde2fcd!2sThe%20Punarnava%20Wellness%20resort!5e0!3m2!1sen!2sin!4v1688876985790!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="cont-box">
+              <h2>Punarnava Resort & Spa - Distance & How To Reach</h2>
+              <p class="sub">
+                Punarnava Resort & Spa Nearby locations and learn how to reach
+              </p>
+
+              <ul>
+                <li>267 KM From Delhi by Car</li>
+                <li>40 KM From Dehradun Airport</li>
+                <li>16 KM From Dehradun Railway Station</li>
+                <li>182 KM From Chandigarh</li>
+                <li>598 KM From Lucknow</li>
+                <li>192 KM From Meerut</li>
+              </ul>
+
+              <p>
+                <a
+                  href="javascript:void(0)"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                  ><button>Get Best Deal</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-bg">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-2 col-md-3 footer-columns">
+            <figure>
+              <img
+                src="img/new-wins-logo.png"
+                alt="main-logo"
+                class="img-fluid tagline"
+              />
+            </figure>
+          </div>
+          <div class="col-lg-2 col-md-3 footer-columns">
+            <ul class="ps-lg-3 footer-page-link p-0">
+              <li>
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal23"
+                  >Want To Partner</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal22"
+                  >Want To Travel</a
+                >
+              </li>
+              <li><a href="policy.html"> Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 footer-columns">
+            <div class="btn-f">
+              <button class="main">
+                <a href="tel:7217011481"
+                  ><img src="./img/tel.svg" alt="" /> 7217011481</a
+                >
+              </button>
+            </div>
+            <ul class="address p-0">
+              <li class="mibile-h">
+                <a href="tel:7217011481"
+                  ><i class="fa fa-phone"></i>7217011481</a
+                >
+              </li>
+              <li>
+                <a href="mailto: book@thepunarnava.com"
+                  ><i class="fa fa-envelope"></i> book@thepunarnava.com</a
+                >
+              </li>
+              <li class="location">
+                <a
+                  href="https://maps.app.goo.gl/naeEuJgtGwyZTxiD8?g_st=com.google.maps.preview.copy"
+                  ><svg
+                    width="45"
+                    height="25"
+                    viewBox="0 0 10 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 6.66658C4.55797 6.66658 4.13405 6.49099 3.82149 6.17843C3.50893 5.86587 3.33333 5.44195 3.33333 4.99992C3.33333 4.55789 3.50893 4.13397 3.82149 3.82141C4.13405 3.50885 4.55797 3.33325 5 3.33325C5.44203 3.33325 5.86595 3.50885 6.17851 3.82141C6.49107 4.13397 6.66667 4.55789 6.66667 4.99992C6.66667 5.21879 6.62356 5.43551 6.5398 5.63772C6.45604 5.83993 6.33327 6.02367 6.17851 6.17843C6.02375 6.33319 5.84001 6.45596 5.6378 6.53972C5.4356 6.62348 5.21887 6.66658 5 6.66658ZM5 0.333252C3.76232 0.333252 2.57534 0.824917 1.70017 1.70009C0.824997 2.57526 0.333332 3.76224 0.333332 4.99992C0.333332 8.49992 5 13.6666 5 13.6666C5 13.6666 9.66667 8.49992 9.66667 4.99992C9.66667 3.76224 9.175 2.57526 8.29983 1.70009C7.42466 0.824917 6.23768 0.333252 5 0.333252Z"
+                      fill="#b9a071"
+                    />
+                  </svg>
+                  Village - Bhitarli, Kimadi, Lambidhar – Mussoorie Road,
+                  Dehradun, Uttarakhand, India</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 footer-columns">
+            <h4>Follow Us On</h4>
+
+            <ul class="p-0 social-media">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/PunarnavaResort?mibextid=LQQJ4d"
+                >
+                  <i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/thepunarnavaresort/ "
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://pin.it/4dpn1vbKl "
+                  ><i class="fa fa-pinterest"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://youtube.com/@thepunarnavaresort?si=iFOK_AjMbOPlVwJG"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-write">
+        <p class="mb-0">
+          Copyright <i class="fa fa-copyright" aria-hidden="true"></i> @
+          Punarnava Resort & Spa 2024
+        </p>
+      </div>
+      <a class="share-bx" data-bs-toggle="modal" data-bs-target="#exampleModal4"
+        ><i class="fa fa-reply" aria-hidden="true"></i>Share</a
+      >
+      <!--    
+  <a onclick="toggle()" href="javascript:void(0)" class="float" id="menu-share"> <i class="fa fa-comments my-float" aria-hidden="true"></i> </a> -->
+      <!-- <ul class="social-f" id="social">
+    <li class="fawp-inner"><a id="Whatsapp-Chat" href="https://api.whatsapp.com/send?phone=9818005957&amp;text=Hi got your number from your website" name="Whatsapp-Chat"> <i class="fa fa-whatsapp my-float" aria-hidden="true"></i> <span class="name">Whatsapp</span> </a> </li>
+    <li class="faphone-inner"> <a href="tel:9818005957" id="Phone-Number-Chat" name="Phone-Number-Chat"> <i class="fa fa-phone my-float" aria-hidden="true"></i> <span class="name">Call Now</span> </a> </li>
+    <li> <a href="mailto:mohnish@group2001.in" id="Email-Chat" name="Email-Chat"> <i class="fa fa-envelope my-float" aria-hidden="true"></i> <span class="name">Write to us</span> </a> </li>
+  </ul> -->
+    </footer>
+    <script>
+      function toggle() {
+        let btn = document.getElementById("social");
+        if (btn.style.display === "block") {
+          btn.style.display = " none";
+        } else {
+          btn.style.display = "block";
+        }
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js" async></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+      async
+    ></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth <= 545) {
+          const mobileSlider = document.querySelector(".mobile-slider");
+          const slides = mobileSlider.querySelectorAll(".col-lg-4");
+          const dotsContainer = document.querySelector(".slider-dots");
+          let currentIndex = 0;
+          let startX = 0;
+          let endX = 0;
+
+          // Create dots
+          slides.forEach((_, index) => {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            if (index === 0) dot.classList.add("active");
+            dot.addEventListener("click", () => showSlide(index));
+            dotsContainer.appendChild(dot);
+          });
+
+          function showSlide(index) {
+            slides[currentIndex].classList.remove("active");
+            dotsContainer.children[currentIndex].classList.remove("active");
+            currentIndex = index;
+            slides[currentIndex].classList.add("active");
+            dotsContainer.children[currentIndex].classList.add("active");
+          }
+
+          function nextSlide() {
+            const nextIndex = (currentIndex + 1) % slides.length;
+            showSlide(nextIndex);
+          }
+
+          function prevSlide() {
+            const prevIndex =
+              (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(prevIndex);
+          }
+
+          // Handle touch start event
+          mobileSlider.addEventListener("touchstart", (event) => {
+            startX = event.touches[0].clientX;
+          });
+
+          // Handle touch end event
+          mobileSlider.addEventListener("touchend", (event) => {
+            endX = event.changedTouches[0].clientX;
+            handleSwipe();
+          });
+
+          function handleSwipe() {
+            if (startX > endX + 50) {
+              nextSlide();
+            } else if (startX < endX - 50) {
+              prevSlide();
+            }
+          }
+
+          // Auto slide every 7 seconds
+          setInterval(nextSlide, 12000);
+
+          // Initially show the first slide
+          showSlide(0);
+        }
+      });
+    </script>
+    <style>
+      li .contact-link {
+        text-decoration: none;
+      }
+
+      li .contact-link:hover {
+        text-decoration: underline;
+      }
+
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        /* left: 40px; */
+        background-color: #6aa611;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        animation: bot-to-top 2s ease-out;
+        border: 1px solid #fff;
+      }
+
+      a#menu-share + .social-f {
+        visibility: hidden;
+      }
+
+      .social-f {
+        position: fixed;
+        right: 40px;
+        padding-bottom: 100px;
+        bottom: 0;
+        z-index: 100;
+      }
+
+      .social-f li {
+        list-style: none;
+        /* margin-bottom: 10px; */
+        padding-bottom: 0px;
+      }
+
+      .float:hover {
+        background-color: #fff;
+        color: #a53e88;
+      }
+
+      a#menu-share:hover + .social-f {
+        visibility: visible;
+        /* animation: scale-in 0.5s; */
+      }
+
+      .social-f li a {
+        background-color: #6aa611;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        width: 60px;
+        height: 60px;
+        display: block;
+        border: 1px solid #fff;
+      }
+
+      .social-wp li a {
+        width: 100% !important;
+        border-radius: 5px !important;
+        padding: 0px 5px 0px 5px !important;
+        text-align: left !important;
+        height: unset !important;
+        margin-bottom: 6px !important;
+      }
+
+      .my-float {
+        font-size: 24px !important;
+        margin-top: 18px;
+      }
+
+      a#menu-share:hover > i {
+        animation: rotate-out 0.5s ease-out;
+      }
+
+      .fawp-inner .social-wp {
+        display: none;
+      }
+
+      li.fawp-inner:hover .social-wp {
+        display: block;
+      }
+
+      ul.social-f1 {
+        display: none;
+      }
+
+      li.fawp-inner:hover .social-f1 {
+        display: block;
+      }
+
+      .social-f:hover {
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #fff;
+      }
+
+      li.faphone-inner:hover .social-f1 {
+        display: block;
+      }
+
+      .social-f1 {
+        position: fixed;
+        right: 100px;
+        padding-bottom: 0px;
+        bottom: 175px;
+        z-index: 100;
+      }
+
+      .fawp-inner .social-wp {
+        position: fixed;
+        right: 100px;
+        padding-bottom: 0px;
+        bottom: 230px;
+        z-index: 100;
+      }
+
+      span.name {
+        position: relative;
+        left: -106px;
+        width: 100px;
+        display: inline-block;
+        top: -33px;
+        font-size: 20px;
+        color: #fff;
+        background: #6aa611;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+
+      .social-f1 li a {
+        background-color: #6aa611;
+        color: #fff;
+        border-radius: 4px;
+        text-align: left;
+        box-shadow: 2px 2px 3px #999;
+        width: 100%;
+        display: block;
+        height: unset;
+        padding: 0px 8px 0px 5px !important;
+      }
+
+      .social-f1 li {
+        margin-top: 6px;
+      }
+
+      @keyframes rotate-out {
+        0% {
+          transform: rotate(360deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </body>
+</html>

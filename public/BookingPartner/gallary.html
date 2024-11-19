@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punarnava Resort & Spa</title>
+<meta name="description" content="In the Foothills of the Famous World Heritage Site Kumbhalgarh fort & the Great Wall Of India" />
+<link rel="icon" type="image/x-icon" href="./img/new design images/cropped-punarnava-favicon-180x180.png">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="css/fontawesome-all.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" async></script>
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="./js/captcha.js" async defer></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16632602442"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16632602442');
+</script>
+<!--Gtag -->
+<script>
+  gtag('config', 'AW-16632602442/c9nbCJHa9cIZEMq-hfs9', {
+    'phone_conversion_number': '7217011481'
+  });
+</script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-4 "> <a class="navbar-brand " href="https://www.thepunarnava.com/BookingPartner/"> <img src="img/new-wins-logo.png" alt="Logo"></a> </div>
+        <div class="col-lg-8 col-8 "> <a href="tel:7217011481" class="btn buttonf  float-end"  id = "Header-Book-Now">7217011481
+          </a></div>
+      </div>
+    </div>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  function submitforms()
+   {
+      
+       var name   = $('#dealname').val();
+       var email   = $('#dealemail').val();
+       var mobile     = $('#dealmobile').val();
+        var city     = $('#dealcity').val();
+      
+        var location = "https://api.neodove.com/integration/custom/2b6daeac-ffd7-4d17-bfdd-00f5cbad1b1e/leads";
+         
+         $.post(location,
+                       {
+                         name    : name,
+                         mobile  : mobile,
+                         email   : email,
+                         city    : city,
+                       },
+                       function(data){
+                         window.location.href = 'https://thepunarnava.com/BookingPartner/thankyou.html';
+                       });
+         
+   }
+  
+  </script>
+
+<section class="best">
+  <div class="modal fade book_pop" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+  aria-hidden="true">
+  
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">Get Best Prices</h1>
+          </div>
+          <div class="modal-body">
+              <div class="status alert alert-success" style="display: none"></div>
+              <form class="row" id="contact-form" name="contact-form" action="./book-package.php" method="POST"
+                  onsubmit="return submitUserForm();">
+                  <div class="form-group col-lg-12  p-0  mb-1">
+                      <input type="text" id="name" name="Name" class="form-control" placeholder="Full Name"
+                          required>
+                  </div>
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                    <input type="text" class="form-control " id="ph_no" name="Phone" placeholder="Phone No."
+                        required>
+                </div>
+                  <div class="form-group col-lg-12 p-0  mb-1">
+                      <input type="email" class="form-control " id="email" name="Email"
+                          placeholder="Enter Email Address" required>
+                  </div>
+  
+                 
+  
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                      <input type="text" class="form-control " id="city" name="City" placeholder="City You Live  In" required>
+                  </div>
+                  
+  
+  
+  
+  
+  
+                  <div class="form-group col-lg-12 mb-2">
+                      <input class="btn_send" name="submit" value="Submit" type="submit" onclick="submitform()">
+                  </div>
+              </form>
+  
+  
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!-- book now Popup -->
+<div class="modal fade book_pop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <h2 class="text-center">Get A Call Back </h2>
+            <div class="contact_form">
+              <div class="cont_txt heading">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form class="row p-3" id="contact-form" name="contact-form" action="./booking-form.php" method="POST" onsubmit="return submitUserForm();">
+                  <div class="form-group col-lg-6   mb-1">
+                    <input type="text" id="name" name="Name" class="form-control" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-lg-6 ps-lg-0 mb-1">
+                    <input type="text" id="name" name="Lastname" class="form-control" placeholder="Last Name" required>
+                  </div>
+                  <div class="form-group   col-lg-12  mb-1">
+                    <input type="text" class="form-control " id="ph_no" name="Phone" placeholder="Phone Number" required>
+                  </div>
+                  <div class="form-group col-lg-12  mb-1">
+                    <input type="text" class="form-control " id="city" name="City" placeholder="City" required>
+                  </div>
+                  <div class="form-group col-lg-12 mb-1">
+                    <input type="email" class="form-control " id="email" name="Email" placeholder="Email Address" required>
+                  </div>
+                  <div class="form-group col-lg-12  mb-1">
+                    <textarea class="form-control " rows="3" id="message" name="Message"
+                        placeholder="Message" required></textarea>
+                  </div>
+                  <div class="form-group col-lg-12 mb-2">
+                    <input class="btn_send" name="submit" value="Submit" type="submit" onclick="submitform()">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="best">
+  <div class="modal fade book_pop" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+  aria-hidden="true">
+  
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">Get Best Prices</h1>
+          </div>
+          <div class="modal-body">
+              <div class="status alert alert-success" style="display: none"></div>
+              <form class="row" id="contact-form" name="contact-form" action="./book-package.php" method="POST"
+                  onsubmit="return submitUserForm();">
+                  <div class="form-group col-lg-12  p-0  mb-1">
+                      <input type="text" id="dealname" name="Name" class="form-control" placeholder="Full Name"
+                          required>
+                  </div>
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                    <input type="text" class="form-control " id="dealmobile" name="Phone" placeholder="Phone No."
+                        required>
+                </div>
+                  <div class="form-group col-lg-12 p-0  mb-1">
+                      <input type="email" class="form-control " id="dealemail" name="Email"
+                          placeholder="Enter Email Address" required>
+                  </div>
+  
+                 
+  
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                      <input type="text" class="form-control " id="dealcity" name="City" placeholder="City You Live  In" required>
+                  </div>
+                  
+  
+  
+  
+  
+  
+                  <div class="form-group col-lg-12 mb-2">
+                      <input class="btn_send" name="submit" value="Submit" type="button" onclick="submitforms()">
+                  </div>
+              </form>
+  
+  
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+<section class="best">
+  <div class="modal fade book_pop" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel22"
+  aria-hidden="true">
+  
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">Want To Travel</h1>
+          </div>
+          <div class="modal-body">
+              <div class="status alert alert-success" style="display: none"></div>
+              <form class="row" id="contact-form" name="contact-form" action="./book-package.php" method="POST"
+                  onsubmit="return submitUserForm();">
+                  <div class="form-group col-lg-12  p-0  mb-1">
+                      <input type="text" id="dealname" name="Name" class="form-control" placeholder="Full Name"
+                          required>
+                  </div>
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                    <input type="text" class="form-control " id="dealmobile" name="Phone" placeholder="Phone No."
+                        required>
+                </div>
+                  <div class="form-group col-lg-12 p-0  mb-1">
+                      <input type="email" class="form-control " id="dealemail" name="Email"
+                          placeholder="Enter Email Address" required>
+                  </div>
+  
+                 
+  
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                      <input type="text" class="form-control " id="dealcity" name="City" placeholder="City You Live  In" required>
+                  </div>
+                  
+  
+  
+  
+  
+  
+                  <div class="form-group col-lg-12 mb-2">
+                      <input class="btn_send" name="submit" value="Submit" type="submit" onclick="submitforms()">
+                  </div>
+              </form>
+  
+  
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+<section class="best">
+  <div class="modal fade book_pop" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel23"
+  aria-hidden="true">
+  
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+              <h1 class="partner-heading text-center text-white">Want To Partner</h1>
+          </div>
+          <div class="modal-body">
+              <div class="status alert alert-success" style="display: none"></div>
+              <form class="row" id="contact-form" name="contact-form" action="./book-package.php" method="POST"
+                  onsubmit="return submitUserForm();">
+                  <div class="form-group col-lg-12  p-0  mb-1">
+                      <input type="text" id="dealname" name="Name" class="form-control" placeholder="Full Name"
+                          required>
+                  </div>
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                    <input type="text" class="form-control " id="dealmobile" name="Phone" placeholder="Phone No."
+                        required>
+                </div>
+                  <div class="form-group col-lg-12 p-0  mb-1">
+                      <input type="email" class="form-control " id="dealemail" name="Email"
+                          placeholder="Enter Email Address" required>
+                  </div>
+  
+                 
+  
+                  <div class="form-group   col-lg-12 p-0  mb-1">
+                      <input type="text" class="form-control " id="dealcity" name="City" placeholder="City You Live  In" required>
+                  </div>
+                  
+  
+  
+  
+  
+  
+                  <div class="form-group col-lg-12 mb-2">
+                      <input class="btn_send" name="submit" value="Submit" type="submit" onclick="submitforms()">
+                  </div>
+              </form>
+  
+  
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!-- section 1 -->
+<section class="alchor-gallary-banner text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <div class="alchor-package-banner-text mt-auto mb-auto">
+          <h1 class="desktop-view"><b></b></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="discover-sec" id="discover">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h4 class="discover">DISCOVER</h4>
+        <h2 class="ds-d">The Punarnava Resort & spa</h2>
+        <h2  class="ds-m">The Punarnava <br> Resort & spa</h2>
+        <!-- video-attachment -->
+        <div class="video ">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IqCnly3vtoI?si=dvPB-sQC3K-PE0EO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- video-attachment -->
+        
+        <p> Nestled in the serene hills of Mussoorie, Punarnava Resort & Spa offers a luxurious retreat with stunning Himalayan views. Our beautifully appointed rooms provide modern comfort and rustic charm. Relax in our state-of-the-art spa or enjoy a refreshing swim with mountain vistas. Savor delectable, fresh vegetarian cuisine at our pure veg restaurant. Explore our spacious lawn for leisurely strolls and outdoor activities, or experience live entertainment in our picturesque amphitheater. Whether seeking adventure or tranquility, Punarnava Resort & Spa is your perfect destination for an unforgettable getaway.
+        </p>
+
+        <div class="text-center pb-5 fix-btn"> <button class="avail"> <a data-bs-toggle="modal" data-bs-target="#exampleModal1">Get Best Deals
+     
+
+        </a></button>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- <----------------popular attractions----------------------- -->
+      <section class="card-overflow">
+  <div class="container container-xl container-xxl">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> 
+          <a data-fancybox="gallery" href="img/new design images/g3.jpg">
+
+          <figure class  ="overlay-image"> 
+          
+            <img src="img/new design images/g1.jpg" alt="Reception" class="img-fluid mobile-view-img">
+          </figure>
+          <h3>Reception</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6  col-sm-12">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g2.jpg">
+  <figure>
+    
+    <img src="img/new design images/g2.jpg" alt="Studio Room" class="img-fluid mobile-view-img">
+          </figure>
+          <h3>Studio Room</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g3.jpg">
+          <figure>
+           
+            <img src="img/new design images/g3.jpg" alt="Bathtub" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Bathtub</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g4.jpg">
+          <figure>
+             
+            <img src="img/new design images/g4.jpg" alt="Restaurant" class="img-fluid mobile-view-img">
+            
+            </figure>
+         
+             <h3>Restaurant</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 tab-view">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g5.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g5.jpg" alt="Heritage Cottage" class="img-fluid mobile-view-img">
+          
+          
+          </figure>
+          
+          <h3>Heritage Cottage</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g6.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g6.jpg" alt="Pre Wedding Shoot" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Pre Wedding Shoot</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g7.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g7.jpg" alt="Wedding" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Wedding</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g8.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g8.jpg" alt="Heritage Cottage" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Heritage Cottage</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g9.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g9.jpg" alt="Heritage Cottage" class="img-fluid mobile-view-img">
+          </figure>
+          <h3>Heritage Cottage</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g10.jpg">
+          <figure> 
+          
+            <img src="img/new design images/g10.jpg" alt="Swimming Pool" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Swimming Pool</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g11.jpg">
+          <figure> 
+        
+            <img src="img/new design images/g11.jpg" alt="Swimming Pool" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Swimming Pool</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g12.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g12.jpg" alt="Heritage Cottage" class="img-fluid mobile-view-img">
+                
+                </figure>
+          <h3>Heritage Cottage</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g13.jpg">
+          <figure>
+           
+            <img src="img/new design images/g13.jpg" alt="Heritage Cottage" class="img-fluid mobile-view-img">
+            
+            
+            
+            </figure>
+        
+          <h3>Heritage Cottage</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g14.jpg">
+          <figure> 
+          
+            <img src="img/new design images/g14.jpg" alt="Amphitheatre" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Amphitheatre</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g15.jpg">
+          <figure>
+            
+           
+            <img src="img/new design images/g15.jpg" alt="Conference Hall" class="img-fluid mobile-view-img">
+          
+          
+          </figure>
+          <h3>Conference Hall</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g16.jpg">
+          <figure>
+            
+           
+            <img src="img/new design images/g16.jpg" alt="Facade" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Facade</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g17.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g17.jpg" alt="Villa" class="img-fluid mobile-view-img">
+           </figure>
+          <h3>Villa</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g18.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g18.jpg" alt="Facade" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Facade</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g19.jpg">
+          <figure> 
+            
+           
+            <img src="img/new design images/g19.jpg" alt="Lawn" class="img-fluid mobile-view-img">
+          
+          </figure>
+          <h3>Lawn</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g20.jpg">
+          <figure> 
+           
+            <img src="img/new design images/g20.jpg" alt="Wedding" class="img-fluid mobile-view-img">
+                
+                </figure>
+          <h3>Wedding</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g21.jpg">
+          <figure>
+           
+            <img src="img/new design images/g21.jpg" alt="Restaurant" class="img-fluid mobile-view-img">
+            
+            
+            </figure>
+          <h3>Restaurant</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g22.jpg">
+          <figure>
+           
+            <img src="img/new design images/g22.jpg" alt="Heritage Cottage" class="img-fluid mobile-view-img">
+            
+            
+            </figure>
+          <h3>Heritage Cottage</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g23.jpg">
+          <figure>
+           
+            <img src="img/new design images/g23.jpg" alt="Studio Room" class="img-fluid mobile-view-img">
+            
+            
+            </figure>
+          <h3>Studio Room</h3>
+          </a> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+        <div class="discover-box"> <a data-fancybox="gallery" href="img/new design images/g24.jpg">
+          <figure>
+           
+            <img src="img/new design images/g24.jpg" alt=" Mountain View" class="img-fluid mobile-view-img">
+            
+            
+            </figure>
+          <h3> Mountain View</h3>
+          </a> </div>
+      </div>
+    
+    
+
+   
+    </div>
+  </div>
+</section>
+<div class="text-center pt-5 fix-btn"> <button class="avail"> <a data-bs-toggle="modal" data-bs-target="#exampleModal1">Get Best Deals
+     
+
+</a></button>
+</div>
+<div class="sticky">
+  <p><a href="tel:7217011481"><img src="./img/phone.svg" alt=""></a></p>
+  <p><a href="https://api.whatsapp.com/send?phone=916367351516&text=Hi,%20got%20your%20number%20from%20Punarnava%20website.><img src="img/whatsapp.svg" alt=""></a></p>
+
+</div>
+
+<!-- Lcoation Section -->
+<section class="map">
+  <div class="container-fluid ">
+    <div class="row map-c">
+      <div class="col-lg-6 col-md-12 col-12">
+        <div class="map-box">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.630546746664!2d78.0400491!3d30.4162714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7ffdd2a351d%3A0xd70fc800adde2fcd!2sThe%20Punarnava%20Wellness%20resort!5e0!3m2!1sen!2sin!4v1688876985790!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12">
+        <div class="cont-box">
+          <h2>Punarnava Resort & Spa - Distances& How To Reach</h2>
+          <p class="sub">Punarnava Resort & Spa Nearby locations and learn how to reach</p>
+
+          <ul>
+            <li>267 KM From Delhi by Car</li>
+            <li>40 KM From Dehradun Airport</li>
+            <li>16 KM From Dehradun Railway Station</li>
+            <li>182 KM From Chandigarh</li>
+            <li>598 KM From Lucknow</li>
+            <li>192 KM From Meerut</li>
+          </ul>
+
+          <p><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal1"><button>Get Best
+                Deal</button>
+
+            </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer-bg ">
+  <div class="container">
+    <div class="row justify-content-between ">
+      <div class="col-lg-2 col-md-3 footer-columns">
+        <figure>
+          <img src="img/new-wins-logo.png" alt="main-logo" class="img-fluid tagline">
+        </figure>
+      </div>
+      <div class="col-lg-2  col-md-3 footer-columns ">
+
+      <ul class="ps-lg-3 footer-page-link p-0">
+
+            <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal23">Want To Partner</a></li>
+            <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal22">Want To Travel</a></li>
+            <li> <a href="policy.html"> Privacy Policy</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-3 col-md-4 footer-columns">
+        <div class="btn-f">
+          <button class="main"><a href="tel:7217011481"><img src="./img/tel.svg" alt="">7217011481</a></button>
+        </div>
+        <ul class="address p-0">
+
+          <li class="mibile-h"><a href="tel:7217011481"><i class="fa fa-phone"></i>7217011481</a></li>
+          <li><a href="mailto: book@thepunarnava.com"><i
+                class="fa fa-envelope"></i> book@thepunarnava.com</a>
+          </li>
+          <li class="location"><a
+              href="https://maps.app.goo.gl/naeEuJgtGwyZTxiD8?g_st=com.google.maps.preview.copy"><svg
+                width="45" height="25" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5 6.66658C4.55797 6.66658 4.13405 6.49099 3.82149 6.17843C3.50893 5.86587 3.33333 5.44195 3.33333 4.99992C3.33333 4.55789 3.50893 4.13397 3.82149 3.82141C4.13405 3.50885 4.55797 3.33325 5 3.33325C5.44203 3.33325 5.86595 3.50885 6.17851 3.82141C6.49107 4.13397 6.66667 4.55789 6.66667 4.99992C6.66667 5.21879 6.62356 5.43551 6.5398 5.63772C6.45604 5.83993 6.33327 6.02367 6.17851 6.17843C6.02375 6.33319 5.84001 6.45596 5.6378 6.53972C5.4356 6.62348 5.21887 6.66658 5 6.66658ZM5 0.333252C3.76232 0.333252 2.57534 0.824917 1.70017 1.70009C0.824997 2.57526 0.333332 3.76224 0.333332 4.99992C0.333332 8.49992 5 13.6666 5 13.6666C5 13.6666 9.66667 8.49992 9.66667 4.99992C9.66667 3.76224 9.175 2.57526 8.29983 1.70009C7.42466 0.824917 6.23768 0.333252 5 0.333252Z"
+                  fill="#b9a071" />
+              </svg> Village - Bhitarli, Kimadi,
+              Lambidhar – Mussoorie Road,
+              Dehradun, Uttarakhand, India</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4 footer-columns">
+        <h4>
+          Follow Us On</h4>
+
+        <ul class="p-0 social-media">
+
+            <li><a target="_blank" href="https://www.facebook.com/PunarnavaResort?mibextid=LQQJ4d"> <i class="fa fa-facebook-f"></i></a>
+            </li>
+            <li><a target="_blank" href="https://www.instagram.com/thepunarnavaresort/ "><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://pin.it/4dpn1vbKl "><i class="fa fa-pinterest"></i></a></li>
+            <li><a target="_blank" href="https://youtube.com/@thepunarnavaresort?si=iFOK_AjMbOPlVwJG"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="copy-write ">
+    <p class="mb-0">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> @ Punarnava Resort & Spa 2024</p>
+  </div>
+  <a class="share-bx" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="fa fa-reply"
+      aria-hidden="true"></i>Share</a>
+  <!--    
+<a onclick="toggle()" href="javascript:void(0)" class="float" id="menu-share"> <i class="fa fa-comments my-float" aria-hidden="true"></i> </a> -->
+  <!-- <ul class="social-f" id="social">
+  <li class="fawp-inner"><a id="Whatsapp-Chat" href="https://api.whatsapp.com/send?phone=9818005957&amp;text=Hi got your number from your website" name="Whatsapp-Chat"> <i class="fa fa-whatsapp my-float" aria-hidden="true"></i> <span class="name">Whatsapp</span> </a> </li>
+  <li class="faphone-inner"> <a href="tel:9818005957" id="Phone-Number-Chat" name="Phone-Number-Chat"> <i class="fa fa-phone my-float" aria-hidden="true"></i> <span class="name">Call Now</span> </a> </li>
+  <li> <a href="mailto:mohnish@group2001.in" id="Email-Chat" name="Email-Chat"> <i class="fa fa-envelope my-float" aria-hidden="true"></i> <span class="name">Write to us</span> </a> </li>
+</ul> -->
+
+
+
+</footer>
+
+<script>
+  function toggle(){
+    let btn = document.getElementById("social");
+    if(btn.style.display === "block"){
+      btn.style.display = " none";
+    }else{
+      btn.style.display = "block";
+    }
+  }
+</script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js" ></script> 
+<script src="js/bootstrap.bundle.min.js" async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" async></script> 
+<script src="owlcarousel/owl.carousel.min.js" ></script> 
+  <style>
+    li .contact-link{
+      text-decoration: none;
+    }
+    li .contact-link:hover{
+      text-decoration: underline;
+    }
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        /* left: 40px; */
+        background-color: #6aa611;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 1000;
+        animation: bot-to-top 2s ease-out;
+        border: 1px solid #fff;
+      }
+
+      a#menu-share+.social-f {
+        visibility: hidden;
+      }
+
+      .social-f {
+        position: fixed;
+        right: 40px;
+        padding-bottom: 100px;
+        bottom: 0;
+        z-index: 100;
+      }
+
+      .social-f li {
+        list-style: none;
+        /* margin-bottom: 10px; */
+        padding-bottom: 0px;
+      }
+
+      .float:hover {
+        background-color: #FFF;
+        color: #a53e88;
+      }
+
+      a#menu-share:hover+.social-f {
+        visibility: visible;
+        /* animation: scale-in 0.5s; */
+      }
+
+      .social-f li a {
+        background-color: #6aa611;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        width: 60px;
+        height: 60px;
+        display: block;
+        border: 1px solid #fff;
+      }
+
+      .social-wp li a {
+        width: 100% !important;
+        border-radius: 5px !important;
+        padding: 0px 5px 0px 5px !important;
+        text-align: left !important;
+        height: unset !important;
+        margin-bottom: 6px !important;
+      }
+
+      .my-float {
+        font-size: 24px !important;
+        margin-top: 18px;
+      }
+
+      a#menu-share:hover>i {
+        animation: rotate-out 0.5s ease-out;
+      }
+
+      .fawp-inner .social-wp {
+        display: none;
+      }
+
+      li.fawp-inner:hover .social-wp {
+        display: block;
+      }
+
+      ul.social-f1 {
+        display: none;
+      }
+
+      li.fawp-inner:hover .social-f1 {
+        display: block;
+      }
+
+      .social-f:hover {
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #FFF;
+      }
+
+      li.faphone-inner:hover .social-f1 {
+        display: block;
+      }
+
+      .social-f1 {
+        position: fixed;
+        right: 100px;
+        padding-bottom: 0px;
+        bottom: 175px;
+        z-index: 100;
+      }
+
+      .fawp-inner .social-wp {
+        position: fixed;
+        right: 100px;
+        padding-bottom: 0px;
+        bottom: 230px;
+        z-index: 100;
+      }
+
+      span.name {
+        position: relative;
+        left: -106px;
+        width: 100px;
+        display: inline-block;
+        top: -33px;
+        font-size: 20px;
+        color: #fff;
+        background: #6aa611;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+
+      .social-f1 li a {
+        background-color: #6aa611;
+        color: #FFF;
+        border-radius: 4px;
+        text-align: left;
+        box-shadow: 2px 2px 3px #999;
+        width: 100%;
+        display: block;
+        height: unset;
+        padding: 0px 8px 0px 5px !important;
+      }
+
+      .social-f1 li {
+        margin-top: 6px;
+      }
+
+      @keyframes rotate-out {
+        0% {
+          transform: rotate(360deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+
+    </style>
+</body>
+</html>
